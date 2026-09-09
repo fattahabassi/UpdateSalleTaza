@@ -1,3 +1,12 @@
-*.manifest text eol=crlf
-*.application text eol=crlf
+# ClickOnce : ne jamais modifier les fichiers générés
+# par Visual Studio.
+
+*.application -text
+*.manifest -text
 *.deploy binary
+*.dll binary
+*.exe binary
+*.config.deploy binary
+
+# Tout le package ClickOnce est traité comme binaire
+Application Files/** -text

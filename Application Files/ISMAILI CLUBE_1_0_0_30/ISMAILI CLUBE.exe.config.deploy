@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<configuration>
+
+  <configSections>
+    <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+
+      
+      <section name="ISMAILI_CLUBE.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+
+    </sectionGroup>
+
+    <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+    
+
+  </configSections>
+
+  <!-- ========================================================= -->
+
+  <!-- DATABASE CONNECTIONS                                      -->
+
+  <!-- ========================================================= -->
+
+  <connectionStrings>
+
+    
+    <add name="ISMAILI_CLUBE.Properties.Settings.Ismaili_ClubeConnectionString" connectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\fattah.abassi\Documents\Ismaili_Clube.mdb" providerName="System.Data.OleDb" />
+
+    <add name="ISMAILI_CLUBE.Properties.Settings.Ismaili_ClubeConnectionString1" connectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\DataSets\Ismaili_Clube.mdb" providerName="System.Data.OleDb" />
+    
+
+  </connectionStrings>
+
+  <!-- ========================================================= -->
+
+  <!-- .NET FRAMEWORK                                            -->
+
+  <!-- ========================================================= -->
+
+  <startup useLegacyV2RuntimeActivationPolicy="true">
+
+   
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.8" />
+
+
+  </startup>
+
+  <!-- ========================================================= -->
+
+  <!-- USER SETTINGS                                            -->
+
+  <!-- ========================================================= -->
+
+  <userSettings>
+
+
+    <ISMAILI_CLUBE.Properties.Settings>
+
+      <setting name="PortName" serializeAs="String">
+        <value />
+      </setting>
+
+      <setting name="PuSalle" serializeAs="String">
+        <value />
+      </setting>
+
+      <setting name="PortStat" serializeAs="String">
+        <value>False</value>
+      </setting>
+
+    </ISMAILI_CLUBE.Properties.Settings>
+
+
+  </userSettings>
+
+  <!-- ========================================================= -->
+
+  <!-- RUNTIME / ASSEMBLY REDIRECTS                              -->
+
+  <!-- ========================================================= -->
+
+  <runtime>
+
+
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+
+      <dependentAssembly>
+
+        <assemblyIdentity name="Microsoft.SqlServer.Types" publicKeyToken="89845dcd8080cc91" culture="neutral" />
+
+        <bindingRedirect oldVersion="0.0.0.0-14.0.0.0" newVersion="14.0.0.0" />
+
+      </dependentAssembly>
+
+
+      <dependentAssembly>
+
+        <assemblyIdentity name="Microsoft.ReportViewer.Common" publicKeyToken="89845dcd8080cc91" culture="neutral" />
+
+        <bindingRedirect oldVersion="0.0.0.0-15.0.0.0" newVersion="15.0.0.0" />
+
+      </dependentAssembly>
+
+
+      <dependentAssembly>
+
+        <assemblyIdentity name="CrystalDecisions.Shared" publicKeyToken="692fbea5521e1304" culture="neutral" />
+
+        <bindingRedirect oldVersion="0.0.0.0-13.0.3500.0" newVersion="13.0.3500.0" />
+
+      </dependentAssembly>
+
+
+      <dependentAssembly>
+
+        <assemblyIdentity name="CrystalDecisions.ReportSource" publicKeyToken="692fbea5521e1304" culture="neutral" />
+
+        <bindingRedirect oldVersion="0.0.0.0-13.0.3500.0" newVersion="13.0.3500.0" />
+
+      </dependentAssembly>
+
+
+      <dependentAssembly>
+
+        <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+
+        <bindingRedirect oldVersion="0.0.0.0-6.0.0.0" newVersion="6.0.0.0" />
+
+      </dependentAssembly>
+
+
+      <dependentAssembly>
+
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral" />
+
+        <bindingRedirect oldVersion="0.0.0.0-13.0.0.0" newVersion="13.0.0.0" />
+
+      </dependentAssembly>
+
+
+      <dependentAssembly>
+
+        <assemblyIdentity name="System.Memory" publicKeyToken="cc7b5fc6cd2ddd51" culture="neutral" />
+
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.2" newVersion="4.0.1.2" />
+
+      </dependentAssembly>
+
+    </assemblyBinding>
+    
+
+  </runtime>
+
+  <!-- ========================================================= -->
+
+  <!-- ENTITY FRAMEWORK                                         -->
+
+  <!-- ========================================================= -->
+
+  <!--
+       Keep this section only if your application uses EF6.
+       SQLite EF6 provider has been removed because you removed
+       System.Data.SQLite.EF6.
+  -->
+
+  <entityFramework>
+
+  
+    <providers>
+
+      <provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer" />
+
+    </providers>
+    
+
+  </entityFramework>
+
+</configuration>
